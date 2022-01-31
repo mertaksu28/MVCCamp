@@ -18,7 +18,8 @@ namespace Business.Concrete
 
         public void Add(Category category)
         {
-            throw new System.NotImplementedException();
+
+            _categoryDal.Insert(category);
         }
 
         public void Delete(Category category)

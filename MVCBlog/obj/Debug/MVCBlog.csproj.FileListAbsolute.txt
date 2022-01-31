@@ -52,6 +52,7 @@ C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\roslyn\VBCSCompiler.exe
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Antlr3.Runtime.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Business.dll
+C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\DataAccess.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Entities.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\EntityFramework.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\EntityFramework.SqlServer.dll
@@ -66,9 +67,11 @@ C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\System.Web.WebPages.Deployment.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\System.Web.WebPages.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\System.Web.WebPages.Razor.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\WebGrease.dll
-C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\DataAccess.dll
+C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\FluentValidation.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Business.pdb
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Business.dll.config
+C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\DataAccess.pdb
+C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\DataAccess.dll.config
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Entities.pdb
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Entities.dll.config
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\EntityFramework.xml
@@ -83,8 +86,7 @@ C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\System.Web.WebPages.Razor.xml
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Newtonsoft.Json.xml
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Antlr3.Runtime.pdb
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\DataAccess.pdb
-C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\DataAccess.dll.config
+C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\FluentValidation.xml
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\obj\Debug\MVCBlog.csproj.AssemblyReference.cache
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\obj\Debug\MVCBlog.csproj.CoreCompileInputs.cache
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\obj\Debug\MVCBlog.csproj.CopyComplete
