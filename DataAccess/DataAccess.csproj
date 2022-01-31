@@ -51,7 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAboutDal.cs" />
+    <Compile Include="Abstract\ICategoryDal.cs" />
+    <Compile Include="Abstract\IContactDal.cs" />
+    <Compile Include="Abstract\IContentDal.cs" />
+    <Compile Include="Abstract\IGenericRepository.cs" />
+    <Compile Include="Abstract\IHeadingDal.cs" />
+    <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
+    <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfGenericRepository.cs" />
+    <Compile Include="Concrete\EntityFramework\EfWriterDal.cs" />
     <Compile Include="Migrations\202201311206206_databaseEdit.cs" />
     <Compile Include="Migrations\202201311206206_databaseEdit.designer.cs">
       <DependentUpon>202201311206206_databaseEdit.cs</DependentUpon>
