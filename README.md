@@ -2,7 +2,7 @@
 
 Making a site like Sour Dictionary
 
-Backend - Asp.Net Core 5
+Backend - Asp.Net Framework
 
 Entity Framework ( Last Version )
 MSSQL Database
