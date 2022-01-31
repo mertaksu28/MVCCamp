@@ -15,14 +15,14 @@ namespace Business.Concrete
 
         public void Add(Category category)
         {
-            if (category.CategoryName.Length > 51 || category.CategoryName == "" || category.Description == "" || category.CategoryName.Length <= 3)
-            {
-                // Hata mesajı
-            }
-            else
-            {
+            //if (category.CategoryName.Length > 51 || category.CategoryName == "" || category.Description == "" || category.CategoryName.Length <= 3)
+            //{
+            //    // Hata mesajı
+            //}
+            //else
+            //{
                 efGenericRepository.Insert(category);
-            }
+            //}
         }
     }
 }
