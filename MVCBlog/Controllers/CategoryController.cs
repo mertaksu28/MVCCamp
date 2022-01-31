@@ -1,4 +1,5 @@
 ﻿using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System.Web.Mvc;
 
@@ -6,7 +7,7 @@ namespace MVCBlog.Controllers
 {
     public class CategoryController : Controller
     {
-        CategoryManager categoryManager = new CategoryManager();
+        CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
         public ActionResult Index()
         {
             return View();

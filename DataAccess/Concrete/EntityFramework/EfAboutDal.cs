@@ -3,8 +3,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfCategoryDal : EfGenericRepository<Category>, ICategoryDal
+    public class EfAboutDal : EfGenericRepository<About>, IAboutDal
     {
-
     }
 }

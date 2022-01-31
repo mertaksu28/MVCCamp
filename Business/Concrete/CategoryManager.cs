@@ -1,28 +1,40 @@
-﻿using DataAccess.Concrete.EntityFramework;
+﻿using Business.Abstract;
+using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System.Collections.Generic;
 
 namespace Business.Concrete
 {
-    public class CategoryManager
+    public class CategoryManager : ICategoryService
     {
-        EfGenericRepository<Category> efGenericRepository = new EfGenericRepository<Category>();
 
-        public List<Category> GetAll()
+        ICategoryDal _categoryDal;
+
+        public CategoryManager(ICategoryDal categoryDal)
         {
-            return efGenericRepository.GetAll();
+            _categoryDal = categoryDal;
         }
 
         public void Add(Category category)
         {
-            //if (category.CategoryName.Length > 51 || category.CategoryName == "" || category.Description == "" || category.CategoryName.Length <= 3)
-            //{
-            //    // Hata mesajı
-            //}
-            //else
-            //{
-                efGenericRepository.Insert(category);
-            //}
+            throw new System.NotImplementedException();
         }
+
+        public void Delete(Category category)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public List<Category> GetAll()
+        {
+            return _categoryDal.GetAll();
+        }
+
+        public void Update(Category category)
+        {
+            throw new System.NotImplementedException();
+        }
+
     }
 }
