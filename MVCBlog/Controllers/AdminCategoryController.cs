@@ -48,5 +48,29 @@ namespace MVCBlog.Controllers
             categoryManager.Delete(categoryId);
             return RedirectToAction("Index");
         }
+        // Güncelleme işlemi için iki işlem mevcut
+        // 1-Güncellenecek bilgilerin güncellenme sayfasına taşınması işlemi
+        // 2-Güncelleme işleminin yapılması işlemi
+        [HttpGet]
+        public ActionResult UpdateCategory(int id)
+        {
+            // Önce Güncellenecek olan kategoriyi bulmak gerekir
+            var categoryId = categoryManager.GetById(id);
+            return View(categoryId);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateCategory(Category category)
+        {
+            categoryManager.Update(category);
+            return RedirectToAction("Index");
+        }
+
     }
 }
+
+/* 40. Videoda yazıyor
+ * Githubda son hali ile revize edilmeli
+ * İstatistik alanları ayrı bir controllerda yapılmalı(Adı: İstatistik Controllerı)
+ * Sorgular sonucu yapılan çıktıyı projenin içerisinde bir klasöre ekran alıntısı konulacak
+ */

@@ -17,7 +17,6 @@ namespace Business.Concrete
 
         public void Add(Category category)
         {
-
             _categoryDal.Insert(category);
         }
 
@@ -38,7 +37,7 @@ namespace Business.Concrete
 
         public void Update(Category category)
         {
-            throw new System.NotImplementedException();
+            _categoryDal.Update(category);
         }
 
     }
