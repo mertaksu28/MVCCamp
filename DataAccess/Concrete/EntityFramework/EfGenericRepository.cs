@@ -24,6 +24,11 @@ namespace DataAccess.Concrete.EntityFramework
             context.SaveChanges();
         }
 
+        public T Get(Expression<Func<T, bool>> filter)
+        {
+            return _object.SingleOrDefault(filter);
+        }
+
         public List<T> GetAll()
         {
             return _object.ToList();

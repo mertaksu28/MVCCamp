@@ -8,6 +8,7 @@ namespace DataAccess.Abstract
     {
         List<T> GetAll();
         List<T> GetAll(Expression<Func<T, bool>> filter);
+        T Get(Expression<Func<T, bool>> filter);
         void Insert(T entity);
         void Delete(T entity);
         void Update(T entity);
