@@ -69,8 +69,4 @@ namespace MVCBlog.Controllers
     }
 }
 
-/* 40. Videoda yazıyor
- * Githubda son hali ile revize edilmeli
- * İstatistik alanları ayrı bir controllerda yapılmalı(Adı: İstatistik Controllerı)
- * Sorgular sonucu yapılan çıktıyı projenin içerisinde bir klasöre ekran alıntısı konulacak
- */
+
