@@ -48,5 +48,10 @@ namespace MVCBlog.Controllers
             headingManager.Add(heading);
             return RedirectToAction("Index");
         }
+
+        public ActionResult ContentByHeading()
+        {
+            return View();
+        }
     }
 }

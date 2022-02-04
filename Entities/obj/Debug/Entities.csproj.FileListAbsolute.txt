@@ -9,3 +9,4 @@ C:\Users\hp\source\repos\MVCBlog\Entities\obj\Debug\Entities.csproj.CoreCompileI
 C:\Users\hp\source\repos\MVCBlog\Entities\obj\Debug\Entities.csproj.CopyComplete
 C:\Users\hp\source\repos\MVCBlog\Entities\obj\Debug\Entities.dll
 C:\Users\hp\source\repos\MVCBlog\Entities\obj\Debug\Entities.pdb
+C:\Users\hp\source\repos\MVCBlog\Entities\obj\Debug\Entities.csproj.AssemblyReference.cache

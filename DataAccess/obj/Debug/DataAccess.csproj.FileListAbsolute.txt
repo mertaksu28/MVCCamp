@@ -17,3 +17,5 @@ C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.csproj.CopyComp
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.pdb
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.mig_writerTitle_added.resources
+C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.mig_writerImage_edited.resources
+C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.mig_writerStatus_added.resources
