@@ -70,6 +70,10 @@
     <Compile Include="Migrations\202201311206206_databaseEdit.designer.cs">
       <DependentUpon>202201311206206_databaseEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202202032329433_mig_writer_added_about.cs" />
+    <Compile Include="Migrations\202202032329433_mig_writer_added_about.designer.cs">
+      <DependentUpon>202202032329433_mig_writer_added_about.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -86,6 +90,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202201311206206_databaseEdit.resx">
       <DependentUpon>202201311206206_databaseEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202032329433_mig_writer_added_about.resx">
+      <DependentUpon>202202032329433_mig_writer_added_about.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -10,6 +10,7 @@ C:\Users\hp\source\repos\MVCBlog\DataAccess\bin\Debug\EntityFramework.xml
 C:\Users\hp\source\repos\MVCBlog\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.databaseEdit.resources
+C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.mig_writer_added_about.resources
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.cache
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
