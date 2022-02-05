@@ -26,5 +26,10 @@ namespace MVCBlog.Controllers
             aboutManager.Add(about);
             return RedirectToAction("Index");
         }
+
+        public PartialViewResult AboutPartial()
+        {
+            return PartialView();
+        }
     }
 }
