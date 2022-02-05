@@ -73,4 +73,5 @@ namespace MVCBlog.Controllers
 /*
  * 44.videoda ödev
  * 45.videoda ödev
+ * 55.videoda ödev
  */

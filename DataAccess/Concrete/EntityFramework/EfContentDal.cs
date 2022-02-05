@@ -1,6 +1,9 @@
-﻿namespace DataAccess.Concrete.EntityFramework
+﻿using DataAccess.Abstract;
+using Entities.Concrete;
+
+namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfContentDal
+    public class EfContentDal : EfGenericRepository<Content>, IContentDal
     {
     }
 }

@@ -12,6 +12,7 @@ namespace Entities.Concrete
         [StringLength(50)]
         public string HeadingName { get; set; }
         public DateTime HeadingDate { get; set; }
+        public bool Status { get; set; }
 
         //İlişkiler
         public int CategoryId { get; set; } //Heading Tablomun içinde CategoryId isminde bir tane sütun olacak

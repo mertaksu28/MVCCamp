@@ -35,7 +35,7 @@ namespace Business.Concrete
             return _contentDal.Get(c => c.ContentId == id);
         }
 
-        public List<Content> GetListById(int id)
+        public List<Content> GetListByHeadingId(int id)
         {
             return _contentDal.GetAll(h => h.HeadingId == id);
         }

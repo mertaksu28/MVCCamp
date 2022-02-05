@@ -49,9 +49,33 @@ namespace MVCBlog.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult ContentByHeading()
+        [HttpGet]
+        public ActionResult UpdateHeading(int id)
         {
-            return View();
+            List<SelectListItem> categoryValue = (from c in categoryManager.GetAll()
+                                                  select new SelectListItem
+                                                  {
+                                                      Text = c.CategoryName,
+                                                      Value = c.CategoryId.ToString()
+                                                  }).ToList();
+            ViewBag.CategoryValue = categoryValue;
+            var headingValue = headingManager.GetById(id);
+            return View(headingValue);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateHeading(Heading heading)
+        {
+            headingManager.Update(heading);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult DeleteHeading(int id)
+        {
+            var headingValue = headingManager.GetById(id);
+            headingValue.Status = false;
+            headingManager.Delete(headingValue);
+            return RedirectToAction("Index");
         }
     }
 }
