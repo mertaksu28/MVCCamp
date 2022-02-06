@@ -137,6 +137,7 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HeadingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MessageController.cs" />
@@ -2302,10 +2303,13 @@
     <Content Include="Views\Message\Inbox.cshtml" />
     <Content Include="Views\Message\Sendbox.cshtml" />
     <Content Include="Views\Message\AddNewMessage.cshtml" />
+    <Content Include="Views\Message\GetInboxMessageDetails.cshtml" />
+    <Content Include="Views\Message\GetSendboxMessageDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\ErrorPage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

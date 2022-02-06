@@ -17,6 +17,7 @@ C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.mig_
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.mig_contentStatus_added.resources
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.mig_headingStatus_added.resources
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.mig_messageClass_added.resources
+C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.mig_contactAddDate_added.resources
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.cache
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete

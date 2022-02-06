@@ -37,7 +37,7 @@ namespace Business.Concrete
 
         public Message GetById(int id)
         {
-            throw new NotImplementedException();
+            return _messageDal.Get(m => m.Id == id);
         }
 
         public void Update(Message message)
