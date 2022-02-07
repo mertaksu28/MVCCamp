@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
 using System.Web.Mvc;
 
 namespace MVCBlog.Controllers
 {
     public class GalleryController : Controller
     {
-        // GET: Gallery
+        ImageFileManager fileManager = new ImageFileManager(new EfImageFileDal());
         public ActionResult Index()
         {
-            return View();
+            var imageFiles = fileManager.GetAll();
+            return View(imageFiles);
         }
     }
 }

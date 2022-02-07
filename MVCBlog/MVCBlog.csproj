@@ -1989,6 +1989,11 @@
     <Content Include="AdminLTE-3.0.4\plugins\toastr\toastr.css" />
     <Content Include="AdminLTE-3.0.4\plugins\toastr\toastr.min.css" />
     <Content Include="AdminLTE-3.0.4\plugins\toastr\toastr.min.js" />
+    <Content Include="AdminLTE-3.0.4\images\bmwz.jpg" />
+    <Content Include="AdminLTE-3.0.4\images\indir %282%29.jpg" />
+    <Content Include="AdminLTE-3.0.4\images\indir %283%29.jpg" />
+    <Content Include="AdminLTE-3.0.4\images\indir %284%29.jpg" />
+    <Content Include="AdminLTE-3.0.4\images\bmw.jpg" />
     <Content Include="AdminLTE-3.0.4\starter.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
