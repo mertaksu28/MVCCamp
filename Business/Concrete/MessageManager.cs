@@ -25,6 +25,11 @@ namespace Business.Concrete
             _messageDal.Delete(message);
         }
 
+        public List<Message> GetAll()
+        {
+            return _messageDal.GetAll();
+        }
+
         public List<Message> GetAllInbox()
         {
             return _messageDal.GetAll(m => m.ReceiverMail == "admin@gmail.com");

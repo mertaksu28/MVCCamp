@@ -5,6 +5,7 @@ namespace Business.Abstract
 {
     public interface IMessageService
     {
+        List<Message> GetAll();
         List<Message> GetAllInbox();
         List<Message> GetAllSendbox();
         Message GetById(int id);

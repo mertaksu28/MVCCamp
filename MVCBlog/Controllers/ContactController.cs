@@ -27,6 +27,14 @@ namespace MVCBlog.Controllers
 
         public PartialViewResult MessageListMenu()
         {
+            var noReadMessage = messageManager.GetAll();
+            if (noReadMessage.Count==0)
+            {
+                ViewBag.NoReadMessage = noReadMessage;
+            }
+
+            var readMessage = messageManager.GetAll().Count();
+            ViewBag.ReadMessage = readMessage;
             var result = contactManager.GetAll().Count();
             ViewBag.Value = result;
             var sendMail = messageManager.GetAllSendbox().Count();
