@@ -60,6 +60,7 @@
     <Compile Include="Abstract\IHeadingDal.cs" />
     <Compile Include="Abstract\IImageFileDal.cs" />
     <Compile Include="Abstract\IMessageDal.cs" />
+    <Compile Include="Abstract\ISkillDal.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\EntityFramework\EfAboutDal.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Concrete\EntityFramework\EfHeadingDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfImageFileDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfMessageDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfSkillDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfWriterDal.cs" />
     <Compile Include="Migrations\202201311206206_databaseEdit.cs" />
     <Compile Include="Migrations\202201311206206_databaseEdit.designer.cs">
@@ -119,6 +121,10 @@
     <Compile Include="Migrations\202202130905230_mig_editPaswordAndUserName.cs" />
     <Compile Include="Migrations\202202130905230_mig_editPaswordAndUserName.designer.cs">
       <DependentUpon>202202130905230_mig_editPaswordAndUserName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202131052392_mig_skillAdded.cs" />
+    <Compile Include="Migrations\202202131052392_mig_skillAdded.designer.cs">
+      <DependentUpon>202202131052392_mig_skillAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202202130905230_mig_editPaswordAndUserName.resx">
       <DependentUpon>202202130905230_mig_editPaswordAndUserName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202131052392_mig_skillAdded.resx">
+      <DependentUpon>202202131052392_mig_skillAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
