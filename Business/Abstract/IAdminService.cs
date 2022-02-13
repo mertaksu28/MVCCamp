@@ -7,6 +7,7 @@ namespace Business.Abstract
     {
         List<Admin> GetAll();
         Admin GetUserNameAndPassWord(string userName, string password);
+        Admin GetUserName(string userName);
         Admin GetById(int id);
         void Add(Admin admin);
         void Delete(Admin admin);

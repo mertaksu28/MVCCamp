@@ -1,9 +1,7 @@
 ﻿using Business.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
-using System;
 using System.Collections.Generic;
-using System.Linq.Expressions;
 
 namespace Business.Concrete
 {
@@ -35,9 +33,14 @@ namespace Business.Concrete
             return _adminDal.Get(a => a.Id == id);
         }
 
+        public Admin GetUserName(string userName)
+        {
+            return _adminDal.Get(a => a.UserName == userName);
+        }
+
         public Admin GetUserNameAndPassWord(string userName, string password)
         {
-           return _adminDal.Get(a => a.UserName == userName && a.Password == password);
+            return _adminDal.Get(a => a.UserName == userName && a.Password == password);
         }
 
         public void Update(Admin admin)

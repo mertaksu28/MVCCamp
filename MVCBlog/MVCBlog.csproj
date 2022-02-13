@@ -150,6 +150,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roles\AdminRoleProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminLTE-3.0.4\.gitignore" />
@@ -2009,6 +2010,16 @@
     <Content Include="AdminLTE-3.0.4\images\indir %283%29.jpg" />
     <Content Include="AdminLTE-3.0.4\images\indir %284%29.jpg" />
     <Content Include="AdminLTE-3.0.4\images\bmw.jpg" />
+    <Content Include="AdminLTE-3.0.4\Skills_Theme\web\css\style.css" />
+    <Content Include="AdminLTE-3.0.4\Skills_Theme\web\images\5.jpg" />
+    <Content Include="AdminLTE-3.0.4\Skills_Theme\web\images\img1.jpg" />
+    <Content Include="AdminLTE-3.0.4\Skills_Theme\web\images\sprite.png" />
+    <Content Include="AdminLTE-3.0.4\Skills_Theme\web\index.html" />
+    <Content Include="AdminLTE-3.0.4\Skills_Theme\web\js\bars.js" />
+    <Content Include="AdminLTE-3.0.4\Skills_Theme\web\js\easyResponsiveTabs.js" />
+    <Content Include="AdminLTE-3.0.4\Skills_Theme\web\js\jquery-1.11.1.min.js" />
+    <Content Include="AdminLTE-3.0.4\Skills_Theme\web\js\jquery.circlechart.js" />
+    <Content Include="AdminLTE-3.0.4\Skills_Theme\web\w3layouts-License.txt" />
     <Content Include="AdminLTE-3.0.4\starter.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />

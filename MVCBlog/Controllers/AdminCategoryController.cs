@@ -3,6 +3,7 @@ using Business.ValidationRules;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using FluentValidation.Results;
+using System;
 using System.Web.Mvc;
 
 namespace MVCBlog.Controllers
@@ -11,11 +12,20 @@ namespace MVCBlog.Controllers
     {
         CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
 
-        [Authorize]
+        [Authorize(Roles = "B")]
         public ActionResult Index()
         {
-            var categoryValue = categoryManager.GetAll();
-            return View(categoryValue);
+            try
+            {
+                var categoryValue = categoryManager.GetAll();
+                return View(categoryValue);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
 
         [HttpGet]
