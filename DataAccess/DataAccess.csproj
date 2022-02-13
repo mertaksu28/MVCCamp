@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IAboutDal.cs" />
+    <Compile Include="Abstract\IAdminDal.cs" />
     <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\EntityFramework\EfAboutDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfAdminDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfContactDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfContentDal.cs" />
@@ -110,6 +112,10 @@
     <Compile Include="Migrations\202202071726410_mig_ımageFile_added.designer.cs">
       <DependentUpon>202202071726410_mig_ımageFile_added.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202202130439150_mig_admin_added.cs" />
+    <Compile Include="Migrations\202202130439150_mig_admin_added.designer.cs">
+      <DependentUpon>202202130439150_mig_admin_added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202202071726410_mig_ımageFile_added.resx">
       <DependentUpon>202202071726410_mig_ımageFile_added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202130439150_mig_admin_added.resx">
+      <DependentUpon>202202130439150_mig_admin_added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
