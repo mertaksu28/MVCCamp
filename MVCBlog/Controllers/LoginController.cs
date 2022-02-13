@@ -19,26 +19,18 @@ namespace MVCBlog.Controllers
         [HttpPost]
         public ActionResult Index(Admin admin)
         {
-            try
+            var adminUserInfo = adminManager.GetUserNameAndPassWord(admin.UserName, admin.Password);
+            if (adminUserInfo != null)
             {
-                var adminUserInfo = adminManager.GetUserNameAndPassWord(admin.UserName, admin.Password);
-                if (adminUserInfo != null)
-                {
-                    FormsAuthentication.SetAuthCookie(admin.UserName, false);
-                    Session["UserName"] = adminUserInfo.UserName;
-                    return RedirectToAction("Index", "AdminCategory");
-                }
-                else
-                {
-                    return RedirectToAction("Index");
-                }
+                FormsAuthentication.SetAuthCookie(admin.UserName, false);
+                
+                Session["UserName"] = adminUserInfo.UserName;
+                return RedirectToAction("Index", "AdminCategory");
             }
-            catch (System.Exception)
+            else
             {
-
-                throw;
+                return RedirectToAction("Index");
             }
-
         }
     }
 }
