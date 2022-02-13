@@ -1,0 +1,25 @@
+﻿@model Entities.Concrete.Admin
+
+@{
+    ViewBag.Title = "AddAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Yeni Admin Ekleme Sayfası</h1>
+<br />
+@* Html helper yöntemi *@
+@using (Html.BeginForm("AddAdmin", "Admin", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.Label("Kullanıcı Adı")
+    @Html.TextBoxFor(c => c.UserName)
+    <br /> <br />
+    @Html.Label("Şifre")
+    @Html.TextBoxFor(c => c.Password)
+    <br /> <br />
+    @Html.Label("Rolü")
+    @Html.TextBoxFor(c => c.Role)
+    <br /> <br />
+    <button class="btn btn-group-sm">Ekle</button>
+</div>
+}

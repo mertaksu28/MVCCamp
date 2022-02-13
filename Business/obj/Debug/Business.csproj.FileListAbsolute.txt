@@ -18,3 +18,4 @@ C:\Users\hp\source\repos\MVCBlog\Business\obj\Debug\Business.csproj.CoreCompileI
 C:\Users\hp\source\repos\MVCBlog\Business\obj\Debug\Business.csproj.CopyComplete
 C:\Users\hp\source\repos\MVCBlog\Business\obj\Debug\Business.dll
 C:\Users\hp\source\repos\MVCBlog\Business\obj\Debug\Business.pdb
+C:\Users\hp\source\repos\MVCBlog\Business\bin\Debug\SimpleCrypto.dll

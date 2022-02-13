@@ -23,7 +23,6 @@ namespace MVCBlog.Controllers
             if (adminUserInfo != null)
             {
                 FormsAuthentication.SetAuthCookie(admin.UserName, false);
-                
                 Session["UserName"] = adminUserInfo.UserName;
                 return RedirectToAction("Index", "AdminCategory");
             }

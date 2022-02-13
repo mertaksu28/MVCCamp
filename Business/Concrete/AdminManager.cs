@@ -16,7 +16,15 @@ namespace Business.Concrete
 
         public void Add(Admin admin)
         {
-            _adminDal.Insert(admin);
+            var hashPassword = new SimpleCrypto.PBKDF2();
+            var password = hashPassword.Compute(admin.Password);
+            Admin newAdmin = new Admin
+            {
+                Password = password,
+                UserName = admin.UserName,
+                Role = admin.Role
+            };
+            _adminDal.Insert(newAdmin);
         }
 
         public void Delete(Admin admin)

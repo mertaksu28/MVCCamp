@@ -7,10 +7,10 @@ namespace Entities.Concrete
         [Key]
         public int Id { get; set; }
 
-        [StringLength(50)]
+        [StringLength(500)]
         public string UserName { get; set; }
 
-        [StringLength(50)]
+        [StringLength(500)]
         public string Password { get; set; }
 
         [StringLength(1)]
