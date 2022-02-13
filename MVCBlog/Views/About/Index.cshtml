@@ -12,6 +12,7 @@
     <tr>
         <th>Id</th>
         <th>Hakkımda Başlığı</th>
+        <th>Durumu</th>
         <th>Aktif Yap</th>
         <th>Pasif Yap</th>
     </tr>
@@ -20,8 +21,9 @@
         <tr>
             <td>@item.AboutId</td>
             <td>Başlık</td>
-            <td><a href="#" class="btn btn-outline-warning">Aktif Yap</a></td>
-            <td><a href="#" class="btn btn-outline-danger">Pasif Yap</a></td>
+            <td>@item.Status</td>
+            <td><a href="/About/StatusOperations/@item.AboutId" class="btn btn-outline-warning">Aktif Yap</a></td>
+            <td><a href="/About/StatusOperations/@item.AboutId" class="btn btn-outline-danger">Pasif Yap</a></td>
         </tr>
     }
 </table>

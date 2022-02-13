@@ -126,6 +126,10 @@
     <Compile Include="Migrations\202202131052392_mig_skillAdded.designer.cs">
       <DependentUpon>202202131052392_mig_skillAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202202131337275_mig_AboutStatus.cs" />
+    <Compile Include="Migrations\202202131337275_mig_AboutStatus.designer.cs">
+      <DependentUpon>202202131337275_mig_AboutStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -178,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202202131052392_mig_skillAdded.resx">
       <DependentUpon>202202131052392_mig_skillAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202131337275_mig_AboutStatus.resx">
+      <DependentUpon>202202131337275_mig_AboutStatus.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -31,5 +31,21 @@ namespace MVCBlog.Controllers
         {
             return PartialView();
         }
+
+        public ActionResult StatusOperations(int id)
+        {
+            var aboutValue = aboutManager.GetById(id);
+
+            if (aboutValue.Status == true)
+            {
+                aboutValue.Status = false;
+            }
+            else
+            {
+                aboutValue.Status = true;
+            }
+            aboutManager.Update(aboutValue);
+            return RedirectToAction("Index");
+        }
     }
 }

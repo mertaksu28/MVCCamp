@@ -27,3 +27,4 @@ C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.pdb
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.mig_editPaswordAndUserName.resources
 C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.mig_skillAdded.resources
+C:\Users\hp\source\repos\MVCBlog\DataAccess\obj\Debug\DataAccess.Migrations.mig_AboutStatus.resources
