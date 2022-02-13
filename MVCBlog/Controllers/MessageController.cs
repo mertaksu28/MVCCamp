@@ -12,6 +12,8 @@ namespace MVCBlog.Controllers
     {
         MessageManager messageManager = new MessageManager(new EfMessageDal());
         MessageValidator validationRules = new MessageValidator();
+
+        [Authorize]
         public ActionResult Inbox()
         {
             var messageList = messageManager.GetAllInbox();

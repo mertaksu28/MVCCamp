@@ -2,6 +2,7 @@
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace MVCBlog.Controllers
 {
@@ -21,6 +22,8 @@ namespace MVCBlog.Controllers
             var adminUserInfo = adminManager.GetUserNameAndPassWord(admin.UserName, admin.Password);
             if (adminUserInfo != null)
             {
+                FormsAuthentication.SetAuthCookie(admin.UserName, false);
+                Session["UserName"] = adminUserInfo.UserName;
                 return RedirectToAction("Index", "AdminCategory");
             }
             else
