@@ -13,7 +13,7 @@ namespace MVCBlog.Controllers
     {
         HeadingManager headingManager = new HeadingManager(new EfHeadingDal());
         CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
-        int writerIdInfo;
+        Context context = new Context();
         public ActionResult WriterProfile()
         {
             return View();
@@ -21,9 +21,8 @@ namespace MVCBlog.Controllers
 
         public ActionResult MyHeading(string session)
         {
-            Context context = new Context();
             session = (string)Session["WriterMail"];
-            writerIdInfo = context.Writers.Where(w => w.WriterMail == session).Select(i => i.WriterId).FirstOrDefault();
+            var writerIdInfo = context.Writers.Where(w => w.WriterMail == session).Select(i => i.WriterId).FirstOrDefault();
             var headingValue = headingManager.GetAllByWriter(writerIdInfo);
             return View(headingValue);
         }
@@ -44,6 +43,8 @@ namespace MVCBlog.Controllers
         [HttpPost]
         public ActionResult NewHeading(Heading heading)
         {
+            string email = (string)Session["WriterMail"];
+            var writerIdInfo = context.Writers.Where(w => w.WriterMail == email).Select(i => i.WriterId).FirstOrDefault();
             heading.HeadingDate = DateTime.Parse(DateTime.Now.ToLongTimeString());
             heading.WriterId = writerIdInfo;
             heading.Status = true;
