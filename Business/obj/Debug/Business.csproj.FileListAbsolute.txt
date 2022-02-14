@@ -6,6 +6,7 @@ C:\Users\hp\source\repos\MVCBlog\Business\bin\Debug\Entities.dll
 C:\Users\hp\source\repos\MVCBlog\Business\bin\Debug\EntityFramework.dll
 C:\Users\hp\source\repos\MVCBlog\Business\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\hp\source\repos\MVCBlog\Business\bin\Debug\FluentValidation.dll
+C:\Users\hp\source\repos\MVCBlog\Business\bin\Debug\SimpleCrypto.dll
 C:\Users\hp\source\repos\MVCBlog\Business\bin\Debug\DataAccess.pdb
 C:\Users\hp\source\repos\MVCBlog\Business\bin\Debug\DataAccess.dll.config
 C:\Users\hp\source\repos\MVCBlog\Business\bin\Debug\Entities.pdb
@@ -18,4 +19,3 @@ C:\Users\hp\source\repos\MVCBlog\Business\obj\Debug\Business.csproj.CoreCompileI
 C:\Users\hp\source\repos\MVCBlog\Business\obj\Debug\Business.csproj.CopyComplete
 C:\Users\hp\source\repos\MVCBlog\Business\obj\Debug\Business.dll
 C:\Users\hp\source\repos\MVCBlog\Business\obj\Debug\Business.pdb
-C:\Users\hp\source\repos\MVCBlog\Business\bin\Debug\SimpleCrypto.dll

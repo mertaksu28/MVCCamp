@@ -60,6 +60,7 @@ C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\FluentValidation.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\Newtonsoft.Json.dll
+C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\SimpleCrypto.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\System.Web.Helpers.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\System.Web.Mvc.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\System.Web.Optimization.dll
@@ -92,4 +93,3 @@ C:\Users\hp\source\repos\MVCBlog\MVCBlog\obj\Debug\MVCBlog.csproj.CoreCompileInp
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\obj\Debug\MVCBlog.csproj.CopyComplete
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\obj\Debug\MVCBlog.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\obj\Debug\MVCBlog.pdb
-C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\SimpleCrypto.dll
