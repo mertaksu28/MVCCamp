@@ -1,6 +1,8 @@
 ﻿using Business.Concrete;
+using DataAccess.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
+using System.Linq;
 using System.Web.Mvc;
 using System.Web.Security;
 
@@ -25,6 +27,31 @@ namespace MVCBlog.Controllers
                 FormsAuthentication.SetAuthCookie(admin.UserName, false);
                 Session["UserName"] = adminUserInfo.UserName;
                 return RedirectToAction("Index", "AdminCategory");
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
+        }
+        //WriterLogin
+        //Yazar giriş işlemlerini mimariye taşı
+        //Ben robot değilim
+        [HttpGet]
+        public ActionResult WriterLogin()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult WriterLogin(Writer writer)
+        {
+            Context context = new Context();
+            var writerUserInfo = context.Writers.FirstOrDefault(w => w.WriterMail == writer.WriterMail && w.WriterPassword == writer.WriterPassword);
+            if (writerUserInfo != null)
+            {
+                FormsAuthentication.SetAuthCookie(writerUserInfo.WriterMail, false);
+                Session["WriterMail"] = writerUserInfo.WriterMail;
+                return RedirectToAction("MyContent", "WriterPanelContent");
             }
             else
             {
