@@ -8,6 +8,7 @@ using System.Web.Security;
 
 namespace MVCBlog.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
         AdminManager adminManager = new AdminManager(new EfAdminDal());

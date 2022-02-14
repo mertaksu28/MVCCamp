@@ -30,9 +30,9 @@ namespace Business.Concrete
             return _headingDal.GetAll();
         }
 
-        public List<Heading> GetAllByWriter()
+        public List<Heading> GetAllByWriter(int id)
         {
-            return _headingDal.GetAll(h => h.WriterId == 5);
+            return _headingDal.GetAll(h => h.WriterId == id);
         }
 
         public Heading GetById(int id)

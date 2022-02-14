@@ -1,4 +1,5 @@
 ﻿using Business.Concrete;
+using DataAccess.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
@@ -12,14 +13,18 @@ namespace MVCBlog.Controllers
     {
         HeadingManager headingManager = new HeadingManager(new EfHeadingDal());
         CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
+        int writerIdInfo;
         public ActionResult WriterProfile()
         {
             return View();
         }
 
-        public ActionResult MyHeading()
+        public ActionResult MyHeading(string session)
         {
-            var headingValue = headingManager.GetAllByWriter();
+            Context context = new Context();
+            session = (string)Session["WriterMail"];
+            writerIdInfo = context.Writers.Where(w => w.WriterMail == session).Select(i => i.WriterId).FirstOrDefault();
+            var headingValue = headingManager.GetAllByWriter(writerIdInfo);
             return View(headingValue);
         }
 
@@ -40,7 +45,7 @@ namespace MVCBlog.Controllers
         public ActionResult NewHeading(Heading heading)
         {
             heading.HeadingDate = DateTime.Parse(DateTime.Now.ToLongTimeString());
-            heading.WriterId = 4;
+            heading.WriterId = writerIdInfo;
             heading.Status = true;
             headingManager.Add(heading);
             return RedirectToAction("MyHeading");
