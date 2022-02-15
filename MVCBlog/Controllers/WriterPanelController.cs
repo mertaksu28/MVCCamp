@@ -80,5 +80,11 @@ namespace MVCBlog.Controllers
             headingManager.Delete(headingValue);
             return RedirectToAction("MyHeading");
         }
+
+        public ActionResult AllHeading()
+        {
+            var headingAll = headingManager.GetAll();
+            return View(headingAll);
+        }
     }
 }

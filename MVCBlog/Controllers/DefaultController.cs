@@ -9,9 +9,9 @@ namespace MVCBlog.Controllers
     {
         HeadingManager headingManager = new HeadingManager(new EfHeadingDal());
         ContentManager contentManager = new ContentManager(new EfContentDal());
-        public PartialViewResult Index()
+        public PartialViewResult Index(int id=0)
         {
-            var contentList = contentManager.GetAll();
+            var contentList = contentManager.GetListByHeadingId(id);
             return PartialView(contentList);
         }
 
