@@ -1,5 +1,7 @@
 ﻿@using Entities.Concrete
-@model List<Heading>
+@using PagedList
+@using PagedList.Mvc
+@model PagedList.IPagedList<Heading>
 @{
     ViewBag.Title = "AllHeading";
     Layout = "~/Views/Shared/_WriterLayout.cshtml";
@@ -114,7 +116,7 @@
                                     <a class="btn btn-info btn-sm" href="/WriterPanelContent/AddContent/@item.HeadingId">
                                         <i class="fas fa-pencil-alt">
                                         </i>
-                                        Bu Başlığa Yorum Yap 
+                                        Bu Başlığa Yorum Yap
                                     </a>
                                 </td>
                             </tr>
@@ -128,4 +130,4 @@
     </section>
 </body>
 </html>
-
+@Html.PagedListPager((IPagedList)Model, p => Url.Action("AllHeading", new { p }), new PagedListRenderOptions { LiElementClasses = new List<string> { "page-link" } })

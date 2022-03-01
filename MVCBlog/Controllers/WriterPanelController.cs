@@ -2,6 +2,7 @@
 using DataAccess.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
+using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -81,9 +82,9 @@ namespace MVCBlog.Controllers
             return RedirectToAction("MyHeading");
         }
 
-        public ActionResult AllHeading()
+        public ActionResult AllHeading(int page=1)
         {
-            var headingAll = headingManager.GetAll();
+            var headingAll = headingManager.GetAll().ToPagedList(page, 4);
             return View(headingAll);
         }
     }

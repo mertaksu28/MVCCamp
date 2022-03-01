@@ -93,3 +93,7 @@ C:\Users\hp\source\repos\MVCBlog\MVCBlog\obj\Debug\MVCBlog.csproj.CoreCompileInp
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\obj\Debug\MVCBlog.csproj.CopyComplete
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\obj\Debug\MVCBlog.dll
 C:\Users\hp\source\repos\MVCBlog\MVCBlog\obj\Debug\MVCBlog.pdb
+C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\PagedList.dll
+C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\PagedList.Mvc.dll
+C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\PagedList.xml
+C:\Users\hp\source\repos\MVCBlog\MVCBlog\bin\PagedList.Mvc.xml
