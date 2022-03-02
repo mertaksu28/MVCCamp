@@ -25,8 +25,9 @@ namespace MVCBlog.Controllers
             return View(contactValues);
         }
 
-        public PartialViewResult MessageListMenu()
+        public PartialViewResult MessageListMenu(string p)
         {
+            
             var noReadMessage = messageManager.GetAll();
             if (noReadMessage.Count==0)
             {
@@ -37,9 +38,9 @@ namespace MVCBlog.Controllers
             ViewBag.ReadMessage = readMessage;
             var result = contactManager.GetAll().Count();
             ViewBag.Value = result;
-            var sendMail = messageManager.GetAllSendbox().Count();
+            var sendMail = messageManager.GetAllSendbox(p).Count();
             ViewBag.SendMail = sendMail;
-            var inMail = messageManager.GetAllInbox().Count();
+            var inMail = messageManager.GetAllInbox(p).Count();
             ViewBag.InMail = inMail;
             return PartialView();
         }

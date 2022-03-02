@@ -1,9 +1,11 @@
 ﻿using Business.Concrete;
 using Business.ValidationRules;
+using DataAccess.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using FluentValidation.Results;
 using System;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace MVCBlog.Controllers
@@ -19,13 +21,15 @@ namespace MVCBlog.Controllers
 
         public ActionResult Inbox()
         {
-            var messageList = messageManager.GetAllInbox();
+            string email = (string)Session["WriterMail"];
+            var messageList = messageManager.GetAllInbox(email);
             return View(messageList);
         }
 
         public ActionResult Sendbox()
         {
-            var messageList = messageManager.GetAllSendbox();
+            string email = (string)Session["WriterMail"];
+            var messageList = messageManager.GetAllSendbox(email);
             return View(messageList);
         }
 
@@ -50,10 +54,11 @@ namespace MVCBlog.Controllers
         [HttpPost]
         public ActionResult AddNewMessage(Message message)
         {
+            string senderEmail = (string)Session["WriterMail"];
             ValidationResult result = validationRules.Validate(message);
             if (result.IsValid)
             {
-                message.SenderMail = "aslı@gmail.com";
+                message.SenderMail = senderEmail;
                 message.History = DateTime.Parse(DateTime.Now.ToShortDateString());
                 messageManager.Add(message);
                 return RedirectToAction("Sendbox");
