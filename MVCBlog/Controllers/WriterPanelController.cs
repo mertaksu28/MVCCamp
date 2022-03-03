@@ -1,7 +1,9 @@
 ﻿using Business.Concrete;
+using Business.ValidationRules;
 using DataAccess.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
+using FluentValidation.Results;
 using PagedList;
 using System;
 using System.Collections.Generic;
@@ -14,9 +16,35 @@ namespace MVCBlog.Controllers
     {
         HeadingManager headingManager = new HeadingManager(new EfHeadingDal());
         CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
+        WriterManager writerManager = new WriterManager(new EfWriterDal());
         Context context = new Context();
-        public ActionResult WriterProfile()
+
+        [HttpGet]
+        public ActionResult WriterProfile(int id = 0)
         {
+            string session = (string)Session["WriterMail"];
+            id = context.Writers.Where(w => w.WriterMail == session).Select(i => i.WriterId).FirstOrDefault();
+            var writerValue = writerManager.GetById(id);
+            return View(writerValue);
+        }
+
+        [HttpPost]
+        public ActionResult WriterProfile(Writer writer)
+        {
+            WriterValidator validationRules = new WriterValidator();
+            ValidationResult result = validationRules.Validate(writer);
+            if (result.IsValid)
+            {
+                writerManager.Update(writer);
+                return RedirectToAction("AllHeading","WriterPanel");
+            }
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
             return View();
         }
 
@@ -82,7 +110,7 @@ namespace MVCBlog.Controllers
             return RedirectToAction("MyHeading");
         }
 
-        public ActionResult AllHeading(int page=1)
+        public ActionResult AllHeading(int page = 1)
         {
             var headingAll = headingManager.GetAll().ToPagedList(page, 4);
             return View(headingAll);
