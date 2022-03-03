@@ -12,6 +12,7 @@ namespace MVCBlog.Controllers
     public class LoginController : Controller
     {
         AdminManager adminManager = new AdminManager(new EfAdminDal());
+        WriterLoginManager writerLogin = new WriterLoginManager(new EfWriterDal());
 
         [HttpGet]
         public ActionResult Index()
@@ -34,9 +35,7 @@ namespace MVCBlog.Controllers
                 return RedirectToAction("Index");
             }
         }
-        //WriterLogin
-        //Yazar giriş işlemlerini mimariye taşı
-        //Ben robot değilim
+
         [HttpGet]
         public ActionResult WriterLogin()
         {
@@ -46,8 +45,9 @@ namespace MVCBlog.Controllers
         [HttpPost]
         public ActionResult WriterLogin(Writer writer)
         {
-            Context context = new Context();
-            var writerUserInfo = context.Writers.FirstOrDefault(w => w.WriterMail == writer.WriterMail && w.WriterPassword == writer.WriterPassword);
+            //Context context = new Context();
+            //var writerUserInfo = context.Writers.FirstOrDefault(w => w.WriterMail == writer.WriterMail && w.WriterPassword == writer.WriterPassword);
+            var writerUserInfo = writerLogin.GetWriter(writer.WriterMail, writer.WriterPassword);
             if (writerUserInfo != null)
             {
                 FormsAuthentication.SetAuthCookie(writerUserInfo.WriterMail, false);
