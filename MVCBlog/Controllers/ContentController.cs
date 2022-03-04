@@ -1,5 +1,7 @@
 ﻿using Business.Concrete;
+using DataAccess.Concrete;
 using DataAccess.Concrete.EntityFramework;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace MVCBlog.Controllers
@@ -10,6 +12,12 @@ namespace MVCBlog.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult GetAllContent(string search)
+        {
+            var values = contentManager.GetAll(search);
+            return View(values);
         }
 
         public ActionResult ContentByHeading(int id)
