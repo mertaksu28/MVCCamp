@@ -27,7 +27,15 @@ namespace Business.Concrete
 
         public List<Content> GetAll(string search)
         {
-            return _contentDal.GetAll(c=>c.ContentValue.Contains(search));
+            if (search == null)
+            {
+                return _contentDal.GetAll();
+            }
+            else
+            {
+                return _contentDal.GetAll(c => c.ContentValue.Contains(search));
+            }
+
         }
 
         public List<Content> GetAllByWriter(int id)
