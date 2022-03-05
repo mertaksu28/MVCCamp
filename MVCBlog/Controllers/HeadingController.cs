@@ -19,6 +19,12 @@ namespace MVCBlog.Controllers
             return View(headingValue);
         }
 
+        public ActionResult HeadingReport()
+        {
+            var headingValue = headingManager.GetAll();
+            return View(headingValue);
+        }
+
         [HttpGet]
         public ActionResult AddHeading()
         {
