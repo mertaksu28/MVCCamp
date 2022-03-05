@@ -15,17 +15,8 @@ namespace MVCBlog.Controllers
         //[Authorize(Roles = "B")]
         public ActionResult Index()
         {
-            try
-            {
-                var categoryValue = categoryManager.GetAll();
-                return View(categoryValue);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
+            var categoryValue = categoryManager.GetAll();
+            return View(categoryValue);
         }
 
         [HttpGet]
@@ -60,13 +51,10 @@ namespace MVCBlog.Controllers
             categoryManager.Delete(categoryId);
             return RedirectToAction("Index");
         }
-        // Güncelleme işlemi için iki işlem mevcut
-        // 1-Güncellenecek bilgilerin güncellenme sayfasına taşınması işlemi
-        // 2-Güncelleme işleminin yapılması işlemi
+
         [HttpGet]
         public ActionResult UpdateCategory(int id)
         {
-            // Önce Güncellenecek olan kategoriyi bulmak gerekir
             var categoryId = categoryManager.GetById(id);
             return View(categoryId);
         }
