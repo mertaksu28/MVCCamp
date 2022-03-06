@@ -5,7 +5,6 @@ C:\Users\hp\source\repos\MVCBlog\Entities\bin\Debug\EntityFramework.dll
 C:\Users\hp\source\repos\MVCBlog\Entities\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\hp\source\repos\MVCBlog\Entities\bin\Debug\EntityFramework.xml
 C:\Users\hp\source\repos\MVCBlog\Entities\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\hp\source\repos\MVCBlog\Entities\obj\Debug\Entities.csproj.AssemblyReference.cache
 C:\Users\hp\source\repos\MVCBlog\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
 C:\Users\hp\source\repos\MVCBlog\Entities\obj\Debug\Entities.csproj.CopyComplete
 C:\Users\hp\source\repos\MVCBlog\Entities\obj\Debug\Entities.dll
