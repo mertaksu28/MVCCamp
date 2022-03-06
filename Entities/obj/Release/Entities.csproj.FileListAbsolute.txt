@@ -1,0 +1,12 @@
+C:\Users\hp\source\repos\MVCBlog\Entities\bin\Release\Entities.dll.config
+C:\Users\hp\source\repos\MVCBlog\Entities\bin\Release\Entities.dll
+C:\Users\hp\source\repos\MVCBlog\Entities\bin\Release\Entities.pdb
+C:\Users\hp\source\repos\MVCBlog\Entities\bin\Release\EntityFramework.dll
+C:\Users\hp\source\repos\MVCBlog\Entities\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\hp\source\repos\MVCBlog\Entities\bin\Release\EntityFramework.xml
+C:\Users\hp\source\repos\MVCBlog\Entities\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\hp\source\repos\MVCBlog\Entities\obj\Release\Entities.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\MVCBlog\Entities\obj\Release\Entities.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\MVCBlog\Entities\obj\Release\Entities.csproj.CopyComplete
+C:\Users\hp\source\repos\MVCBlog\Entities\obj\Release\Entities.dll
+C:\Users\hp\source\repos\MVCBlog\Entities\obj\Release\Entities.pdb

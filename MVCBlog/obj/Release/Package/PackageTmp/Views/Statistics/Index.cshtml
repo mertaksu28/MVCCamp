@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h2>Tablo Analizleri</h2>
+<br />
+<head>
+    <style>
+        p {
+            color: black;
+            font-size: 16px;
+        }
+
+        .card {
+            margin-top: 10px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+            <div class="card" style="height: 180px; background-color: ActiveCaption">
+                <div class="card-body text-center">
+                    <br />
+                    <p class="card-text"><b>@ViewBag.TotalCategory</b></p>
+                    <p>Toplam Kategori Sayısı</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+            <div class="card bg-warning" style="height:180px">
+                <div class="card-body text-center">
+                    <br />
+                    <p><b>@ViewBag.SubtitleSoftwareCount</b></p>
+                    <p>Başlık tablosunda "Yazılım" kategorisine ait başlık sayısı</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+            <div class="card" style=" height: 180px; background-color: ActiveBorder;">
+                <div class="card-body text-center">
+                    <br />
+                    <p class="card-text"><b>@ViewBag.NoveListName</b></p>
+                    <p>Yazar adında 'a' harfi geçen yazar sayısı</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+            <div class="card bg-info" style="height:180px">
+                <div class="card-body text-center">
+                    <br />
+                    <p class="card-text"><b>@ViewBag.CategoryTitle</b></p>
+                    <p>En fazla başlığa sahip kategori adı</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+            <div class="card" style="height: 200px;background-color: aliceblue;">
+                <div class="card-body text-center">
+                    <p class="card-text"><b>@ViewBag.Variation</b></p>
+                    <p>Kategori tablosunda durumu true olan kategoriler ile false olan kategoriler arasındaki sayısal fark</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+

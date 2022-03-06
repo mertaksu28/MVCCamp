@@ -1,0 +1,20 @@
+﻿@model Entities.Concrete.Content
+@{
+    ViewBag.Title = "AddContent";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<h2>Yeni Yorum Ekleme Sayfası</h2>
+
+@using (Html.BeginForm("AddContent", "WriterPanelContent", FormMethod.Post))
+{
+    <div class="form-group">
+        <input type="hidden" name="HeadingId" value="@ViewBag.D" />
+        @Html.Label("Yorum Yap")
+        @Html.TextAreaFor(w => w.ContentValue, 10, 30, new { @class = "form-control" })
+        @Html.ValidationMessageFor(w => w.ContentValue)
+        <br />
+        <button class="btn btn-outline-info">Yeni Yorum Ekle</button>
+    </div>
+}
+
